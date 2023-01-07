@@ -65,7 +65,20 @@ class UserController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $validatorData = Validator::make($request->all(),[
+            'name' => 'required|string',
+            'email' => 'required|string|email|unique:users,id',
+
+        ]);
+        if($validatorData->fails())
+        {
+            return response()->json($validatorData->errors(),400);
+        }
+        $user = User::where('id', $request->input('id'))->update([
+            'name'=>$request->input('name'),
+            'email' => $request->input('email'),
+        ]);
+        return returnData(2000, [], 'Succesfull');
     }
 
 

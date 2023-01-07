@@ -19,14 +19,6 @@ import axios from 'axios';
 Vue.use(VueAxios, axios)
 
 
-import '@deveodk/vue-toastr/dist/@deveodk/vue-toastr.css'
-import VueToastr from '@deveodk/vue-toastr'
-Vue.use(VueToastr, {
-    defaultPosition: 'toast-top-right',
-    defaultType: 'info',
-    defaultTimeout: 10000000
-});
-
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueSweetalert2 from 'vue-sweetalert2';
 Vue.use(VueSweetalert2);

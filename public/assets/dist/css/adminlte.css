@@ -5960,7 +5960,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-  opacity: 0;
+  opacity: 1;
   border-radius: 0.25rem;
 }
 
@@ -40172,22 +40172,27 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 
 #toast-container .toast {
   background-color: #007bff;
+  opacity: 1;
 }
 
 #toast-container .toast-success {
   background-color: #28a745;
+  opacity: 1;
 }
 
 #toast-container .toast-error {
   background-color: #dc3545;
+  opacity: 1;
 }
 
 #toast-container .toast-info {
   background-color: #17a2b8;
+  opacity: 1;
 }
 
 #toast-container .toast-warning {
   background-color: #ffc107;
+  opacity: 1;
 }
 
 .toast-bottom-full-width .toast,

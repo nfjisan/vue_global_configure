@@ -10,7 +10,5 @@
 </script>
 
 <style scoped>
-.toast {
-    opacity: 1 !important;
-}
+
 </style>

@@ -72,7 +72,7 @@ export default{
                         _this.$store.state.httpRequest = false;
 
                         if (parseInt(retData.status) === 5001) {
-                            _this.$toastr('error', retData.message, 'Error');
+                            _this.$swal('error', retData.message, 'Error');
                             // _this.$router.push({path:'/admin/dashboard'});
                             return;
                         }
@@ -87,17 +87,17 @@ export default{
                             if (typeof callback == 'function') {
                                 callback(retData.result);
                             }
-                            _this.$toastr('success', retData.message, 'Success');
+                            _this.$swal('success', retData.message, 'Success');
                         }
                         if (parseInt(retData.status) === 3000) {
-                            _this.$toastr('warning', retData.message, 'Warning');
+                            _this.$swal('warning', retData.message, 'Warning');
                             _this.assignValidationError(retData.result);
                         }
                         if (parseInt(retData.status) === 5000) {
-                            _this.$toastr('error', retData.message, 'Error');
+                            _this.$swal('error', retData.message, 'Error');
                         }
                     }).catch(function (error) {
-                        _this.$toastr('Success', 'Something Wrong', 'success');
+                        _this.$swal('Success', 'Something Wrong', 'success');
 
                     });
                 }

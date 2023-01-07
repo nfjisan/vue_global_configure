@@ -44,17 +44,7 @@
                 tableHeading: ['Sl','Name','Email', 'Action'],
             }
         },
-        methods : {
-            deleteData(id) {
-                const _this = this;
-                if(confirm("Are you sure to delete this user ?")){
-                    _this.axios.delete(baseUrl + '/api/users/' + id).then(function() {
-                        _this.getDataList();
-                    });
-                }
 
-            }
-        },
         mounted(){
             this.getDataList();
         }

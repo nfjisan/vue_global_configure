@@ -34,22 +34,27 @@
   // Background color
   .toast {
     background-color: $primary;
+    opacity: 1;
   }
 
   .toast-success {
     background-color: $success;
+    opacity: 1;
   }
 
   .toast-error {
     background-color: $danger;
+    opacity: 1;
   }
 
   .toast-info {
     background-color: $info;
+    opacity: 1;
   }
 
   .toast-warning {
     background-color: $warning;
+    opacity: 1;
   }
 }
 

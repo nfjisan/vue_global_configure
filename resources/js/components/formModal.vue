@@ -1,5 +1,5 @@
 <template>
-<div class="modal fade" role="dialog" :id="modalId" :data-bs-backdrop="backDrop">
+<div class="modal fade" role="dialog" :id="modalId" :data-backdrop="backDrop">
     <div class="modal-dialog">
         <form @submit.prevent="submit()">
             <div class="modal-content">
